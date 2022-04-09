@@ -9,8 +9,10 @@ import (
 var updater updateHeap
 
 func init() {
-	updater.init()
-	go updater.updateTask()
+	// We don't use this at all. This is used for FRP, but we
+	// use a different transport option.
+	// updater.init()
+	// go updater.updateTask()
 }
 
 // entry contains a session update info
